@@ -17,7 +17,26 @@ namespace Business.Concrete
         }
         public List<Car> GetAll()
         {
-        return _carDal.GetAll();
+            return _carDal.GetAll();
+        }
+        public void Add(Car car)
+        {
+            _carDal.Add(car);
+        }
+
+        public void Delete(Car car)
+        {
+            _carDal.Delete(car);
+        }
+
+        public Car GetById(int Id)
+        {
+            return _carDal.Get(c => c.CarId == Id);
+        }
+
+        public void Update(Car car)
+        {
+            _carDal.Update(car);
         }
     }
 }
