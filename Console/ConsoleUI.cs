@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entities;
+using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +10,10 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("xxys");
-        }
+
+
+
+        }       
     }
 }
+
